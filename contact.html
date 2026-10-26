@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Healthy — questions about sports, memberships and studios.">
+  <title>Healthy — Contact</title>
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/interactive.css">
+  <script src="js/theme.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html">Healthy</a>
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="index.html">Studios &amp; Gyms</a>
+    <a href="sports.html">Sports</a>
+    <a href="services.html">Prices</a>
+    <a href="locations.html">Locations</a>
+    <a class="active" aria-current="page" href="contact.html">Contact</a>
+    <a href="register.html">Register</a>
+  </nav>
+  <div class="header-actions">
+    <button type="button" class="theme-btn" id="themeToggle">Switch to dark theme</button>
+    <span class="location">● Astana</span>
+    <span>EN⌄</span>
+    <a class="btn btn-dark" href="register.html">Join</a>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <span class="eyebrow">CONTACT</span>
+    <h1>Questions about sport? Write to us</h1>
+    <p>Questions about prices, memberships or studios? Tell us what you would like to try — we will suggest a studio, an activity and a membership.</p>
+  </section>
+
+  <section class="section form-section">
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-12 col-lg-5">
+          <h2 class="h3 fw-bold">How to reach us</h2>
+          <p class="text-body-secondary">Our team replies within one working day.</p>
+          <ul class="list-unstyled info-list">
+            <li><span aria-hidden="true">📍</span> Astana, Saraishyk St. 34</li>
+            <li><span aria-hidden="true">✉️</span> hello@healthy.example</li>
+            <li><span aria-hidden="true">⏱️</span> Mon–Sun, 08:00–22:00</li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-lg-7">
+          <form id="contactForm" class="form-card needs-validation" name="contact" action="#" method="post" novalidate>
+            <h2 class="h4 fw-bold mb-3">Send a message</h2>
+            <div class="row g-3">
+
+              <div class="col-12 col-md-6">
+                <label for="contactName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="contactName" name="name"
+                       placeholder="Your name" minlength="2" maxlength="60"
+                       autocomplete="name" aria-describedby="contactNameHelp" required>
+                <div id="contactNameHelp" class="form-text">At least 2 characters.</div>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter your name (at least 2 characters).</div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label for="contactEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="contactEmail" name="email"
+                       placeholder="name@example.com" autocomplete="email"
+                       aria-describedby="contactEmailHelp" required>
+                <div id="contactEmailHelp" class="form-text">We will only use it to reply to you.</div>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter a valid email, e.g. name@example.com.</div>
+              </div>
+
+              <div class="col-12">
+                <label for="contactMessage" class="form-label">Message</label>
+                <textarea class="form-control" id="contactMessage" name="message" rows="5"
+                          placeholder="Which sport or studio are you interested in?"
+                          minlength="10" maxlength="500" aria-describedby="contactMessageHelp" required></textarea>
+                <div id="contactMessageHelp" class="form-text">10–500 characters. <span id="messageCount">0 / 500</span></div>
+                <div class="valid-feedback">Thanks, that is enough detail.</div>
+                <div class="invalid-feedback" id="messageInvalid">Your message must be 10–500 characters.</div>
+              </div>
+
+              <div class="col-12 d-flex gap-2 flex-wrap">
+                <button type="submit" class="btn btn-blue">Send message</button>
+                <button type="reset" class="btn btn-outline-dark">Clear</button>
+              </div>
+            </div>
+            <div id="contactSuccess" class="alert alert-success mt-3 d-none" role="status">
+              ✅ Thank you! Your message was validated successfully (demonstration only — nothing was sent).
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div><strong>Healthy</strong><p>Making sport easier.</p></div>
+  <div><a href="sports.html">Sports</a><a href="services.html">Prices</a><a href="locations.html">Locations</a><a href="contact.html">Contact</a><a href="register.html">Register</a></div>
+  <div><p>© 2026 Healthy group project</p></div>
+</footer>
+<script src="js/contact.js"></script>
+</body>
+</html>

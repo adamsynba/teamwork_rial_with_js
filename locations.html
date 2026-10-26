@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find Healthy studios and gyms near you, and book a session.">
+  <title>Healthy — Locations</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/interactive.css">
+  <script src="js/theme.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">Healthy</a>
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="index.html">Studios &amp; Gyms</a>
+    <a href="sports.html">Sports</a>
+    <a href="services.html">Prices</a>
+    <a class="active" href="locations.html">Locations</a>
+    <a href="contact.html">Contact</a>
+    <a href="register.html">Register</a>
+  </nav>
+  <div class="header-actions">
+    <button type="button" class="theme-btn" id="themeToggle">Switch to dark theme</button>
+    <span class="location">●  Astana</span>
+    <span>EN⌄</span>
+    <a class="btn btn-dark" href="register.html">Download</a>
+  </div>
+</header>
+
+<main>
+
+  <!--HERO-->
+  <section class="page-hero">
+    <span class="eyebrow">LOCATIONS</span>
+    <h1>Find a workout near you</h1>
+    <p>Choose a city and activity, pick a studio, and book a session in a couple of clicks.</p>
+  </section>
+
+  <!--FILTERS — Flexbox-->
+  <section class="section">
+
+    <div class="filter-bar" role="group" aria-label="Filter by city">
+      <button class="filter active-filter">All cities</button>
+      <button class="filter">Astana</button>
+      <button class="filter">Almaty</button>
+      <button class="filter">Shymkent</button>
+      <button class="filter">Karaganda</button>
+    </div>
+
+    <div class="filter-bar" role="group" aria-label="Filter by activity">
+      <button class="filter active-filter">All activities</button>
+      <button class="filter">Gym</button>
+      <button class="filter">Swimming</button>
+      <button class="filter">Yoga</button>
+      <button class="filter">Boxing</button>
+    </div>
+
+    <!--LOCATIONS GRID CSS Grid 6 карточек -->
+    <div class="catalog-grid">
+
+      <article class="catalog-card" id="loc-fitness-park">
+        <figure class="card-photo">
+          <img src="images/jym.jpg" alt="Interior of Fitness Park gym in Astana, with strength and cardio equipment">
+        </figure>
+        <h2>Fitness Park</h2>
+        <p>Astana, Saraishyk St. 34 — Gym, Boxing</p>
+        <div class="price">08:00–22:00 <small>daily</small></div>
+        <a href="register.html">Book a session →</a>
+      </article>
+
+      <article class="catalog-card" id="loc-aqua">
+        <figure class="card-photo">
+          <img src="images/Common-Indoor-Pool-Humidity-Problems-1080x675.png" alt="Indoor swimming pool at Aqua Center in Astana">
+        </figure>
+        <h2>Aqua Center</h2>
+        <p>Astana, Turan Ave. 55 — Swimming</p>
+        <div class="price">07:00–23:00 <small>daily</small></div>
+        <a href="register.html">Book a session →</a>
+      </article>
+
+      <article class="catalog-card" id="loc-yoga-loft">
+        <figure class="card-photo">
+          <img src="images/yoga-floor.jpg" alt="Woman practicing yoga indoors at Yoga Loft studio in Almaty">
+        </figure>
+        <h2>Yoga Loft</h2>
+        <p>Almaty, Dostyk Ave. 12 — Yoga, Stretching</p>
+        <div class="price">09:00–21:00 <small>daily</small></div>
+        <a href="register.html">Book a session →</a>
+      </article>
+
+      <article class="catalog-card" id="loc-boxlab">
+        <figure class="card-photo">
+          <img src="images/boxing.jpg" alt="Boxing training session at BoxLab gym in Almaty">
+        </figure>
+        <h2>BoxLab</h2>
+        <p>Almaty, Zhandosov St. 58 — Boxing, Martial Arts</p>
+        <div class="price">10:00–22:00 <small>daily</small></div>
+        <a href="register.html">Book a session →</a>
+      </article>
+
+      <article class="catalog-card" id="loc-shymkent-gym">
+        <figure class="card-photo">
+          <img src="images/CF_Thrive.jpg" alt="City Gym in Shymkent with exercise bikes and cardio machines">
+        </figure>
+        <h2>City Gym</h2>
+        <p>Shymkent, Baitursynov St. 9 — Gym, Cycling</p>
+        <div class="price">06:00–23:00 <small>daily</small></div>
+        <a href="register.html">Book a session →</a>
+      </article>
+
+      <article class="catalog-card" id="loc-karaganda-pool">
+        <figure class="card-photo">
+          <img src="images/pool.jpg" alt="Indoor pool at Karaganda Aqua swimming and aqua fitness center">
+        </figure>
+        <h2>Karaganda Aqua</h2>
+        <p>Karaganda, Yerzhanov St. 21 — Swimming, Aqua Fitness</p>
+        <div class="price">08:00–22:00 <small>daily</small></div>
+        <a href="register.html">Book a session →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS  Flexbox/Grid 4 шага  -->
+  <section class="section">
+    <div class="section-heading centered">
+      <h2>How booking works</h2>
+      <p>Four simple steps from choosing a city to confirming your session.</p>
+    </div>
+    <div class="steps-grid steps-grid-4">
+      <article class="step"><span>01</span><h3>Choose a city</h3><p>Pick the city that's convenient for you.</p></article>
+      <article class="step"><span>02</span><h3>Choose a session</h3><p>Select the activity and a nearby studio.</p></article>
+      <article class="step"><span>03</span><h3>Choose a time</h3><p>Pick a convenient date and time.</p></article>
+      <article class="step"><span>04</span><h3>Confirm booking</h3><p>Get confirmation by email or phone.</p></article>
+    </div>
+  </section>
+
+  <!--FAQ -->
+  <section class="faq-section">
+    <div class="section-heading centered"><h2>Frequently asked questions</h2><p>Short answers about locations and booking.</p></div>
+    <div class="faq-grid" id="task2">
+      <div class="faq-item">
+        <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">How do I cancel a booking?</button>
+        <p class="faq-answer" id="faq-answer-1" hidden>Message support in the app no later than 2 hours before your session.</p>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">Can I change the studio on the day of the session?</button>
+        <p class="faq-answer" id="faq-answer-2" hidden>Yes, if the chosen studio has free spots — you can do this right in the app.</p>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">Is booking included in my membership?</button>
+        <p class="faq-answer" id="faq-answer-3" hidden>Yes, booking a session is included in every active Healthy plan.</p>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">Can I train near my home?</button>
+        <p class="faq-answer" id="faq-answer-4" hidden>Yes — use the city and activity filters to find the closest studio.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div><strong>Healthy</strong><p>One membership for sport.</p></div>
+  <div><a href="index.html">Home</a><a href="sports.html">Sports</a><a href="services.html">Prices</a><a href="contact.html">Contact</a><a href="register.html">Register</a></div>
+  <div><p>© 2026 Healthy student project</p></div>
+</footer>
+<script src="js/faq.js" defer></script>
+</body>
+</html>

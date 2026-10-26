@@ -1,0 +1,47 @@
+@media (max-width: 900px) {
+  .site-header { flex-wrap: wrap; gap: 12px; }
+  .main-nav { order: 3; flex-basis: 100%; justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 4px; }
+  .header-actions .location, .header-actions > span:nth-child(2) { display: none; }
+  .hero { grid-template-columns: 1fr; min-height: 900px; }
+  .hero-copy { align-self: start; }
+  .hero-visual { min-height: 480px; }
+  .feature-grid, .sport-grid, .catalog-grid, .pricing-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .about-hero, .story-section, .contact-layout { grid-template-columns: 1fr; }
+  .steps-grid, .benefit-grid { grid-template-columns: 1fr; }
+  .featured-price { transform: none; }
+}
+
+@media (max-width: 600px) {
+  .site-header { padding: 10px 4%; }
+  .logo { font-size: 18px; padding: 6px 10px; }
+  .main-nav { gap: 14px; }
+  .main-nav a { font-size: 12px; }
+  .header-actions .btn { padding: 9px 13px; font-size: 12px; }
+  .hero { margin: 0; border-radius: 0 0 22px 22px; padding: 55px 7%; min-height: 790px; }
+  .hero h1 { font-size: 44px; letter-spacing: -2px; }
+  .hero p { font-size: 16px; }
+  .award { margin-top: 50px; font-size: 13px; }
+  .hero-visual { min-height: 360px; }
+  .phone { width: 190px; height: 380px; border-width: 7px; border-radius: 28px; right: 4%; }
+  .phone-title { margin-top: 55px; font-size: 22px; }
+  .person { font-size: 75px; }
+  .shape-pink { width: 130px; height: 110px; }
+  .shape-green { width: 120px; height: 95px; }
+  .section, .pricing-section, .faq-section { padding: 60px 5%; }
+  .section-heading h2 { font-size: 34px; }
+  .feature-grid, .sport-grid, .catalog-grid, .pricing-grid, .faq-grid { grid-template-columns: 1fr; }
+  .feature-card { min-height: 390px; }
+  .sport-card { min-height: 220px; }
+  .page-hero { padding: 70px 6%; }
+  .page-hero h1 { font-size: 42px; }
+  .about-hero { padding: 70px 6%; }
+  .about-hero h1 { font-size: 42px; }
+  .story-section { padding: 60px 6%; }
+  .circle-art { width: 230px; height: 230px; font-size: 65px; }
+  .floating-card { padding: 12px; font-size: 13px; }
+  .contact-layout { padding-top: 50px; }
+  .contact-form { padding: 24px; }
+  .site-footer { flex-direction: column; }
+  .day-chip { min-width: 85px; padding: 14px 10px; }
+  .day-chip span { font-size: 22px; }
+}

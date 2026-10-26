@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Healthy sports catalogue and prices.">
+  <title>Healthy — Prices & Activities</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/interactive.css">
+  <script src="js/theme.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">Healthy</a>
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="index.html">Studios & Gyms</a>
+    <a href="sports.html">Sports</a>
+    <a class="active" href="services.html">Prices</a>
+    <a href="locations.html">Locations</a>
+    <a href="contact.html">Contact</a>
+    <a href="register.html">Register</a>
+  </nav>
+  <div class="header-actions">
+    <button type="button" class="theme-btn" id="themeToggle">Switch to dark theme</button><span class="location">● Astana</span><span>EN⌄</span><a class="btn btn-dark" href="locations.html">Download</a></div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <span class="eyebrow">CATALOGUE</span>
+    <h1>Choose your way to stay active</h1>
+    <p>One membership gives you access to different activities. Compare the options and find what suits you.</p>
+  </section>
+
+  <section class="section">
+    <div class="filter-bar" role="group" aria-label="Activity filters">
+      <button class="filter active-filter">All activities</button>
+    </div>
+
+    <div class="catalog-grid">
+      <article class="catalog-card"><div class="catalog-icon purple">🏋️</div><h2>Gym</h2><p>Strength and functional training.</p><div class="price">from 12,990 ₸ <small>/ month</small></div><a href="locations.html">Learn more →</a></article>
+      <article class="catalog-card"><div class="catalog-icon blue">🏊</div><h2>Swimming</h2><p>Pools for training and free swimming.</p><div class="price">from 17,490 ₸ <small>/ month</small></div><a href="locations.html">Learn more →</a></article>
+      <article class="catalog-card"><div class="catalog-icon pink">🧘</div><h2>Yoga</h2><p>Group classes for different experience levels.</p><div class="price">from 12,790 ₸ <small>/ month</small></div><a href="locations.html">Learn more →</a></article>
+      <article class="catalog-card"><div class="catalog-icon orange">🥊</div><h2>Intensive workouts</h2><p>HIIT, functional training and cardio.</p><div class="price">from 15,190 ₸ <small>/ month</small></div><a href="locations.html">Learn more →</a></article>
+      <article class="catalog-card"><div class="catalog-icon rose">🤸</div><h2>Pilates</h2><p>Mobility, balance and body control training.</p><div class="price">from 12,990 ₸ <small>/ month</small></div><a href="locations.html">Learn more →</a></article>
+      <article class="catalog-card"><div class="catalog-icon olive">🥋</div><h2>Martial arts</h2><p>Boxing, kickboxing and other disciplines.</p><div class="price">from 13,290 ₸ <small>/ month</small></div><a href="locations.html">Learn more →</a></article>
+    </div>
+  </section>
+
+  <!-- TASK 4: Favourite activities list -->
+  <section class="section favourites-section" id="task4">
+    <div class="section-heading centered">
+      <h2>My favourite activities</h2>
+      <p>Add the activities you want to try first.</p>
+    </div>
+    <div class="fav-box">
+      <form id="favForm" novalidate>
+        <label for="favInput">New favourite</label>
+        <div class="welcome-row">
+          <input type="text" id="favInput" placeholder="e.g. Morning yoga">
+          <button type="submit" class="btn btn-blue">Add</button>
+        </div>
+      </form>
+      <p id="favError" class="fav-error" aria-live="polite"></p>
+      <ul id="favList" class="fav-list"></ul>
+      <p class="fav-count">Items: <strong id="favCount">0</strong></p>
+    </div>
+  </section>
+
+  <section class="pricing-section">
+    <div class="section-heading centered"><h2>Payment options</h2><p>Choose a period and format that fits your schedule.</p></div>
+    <div class="pricing-grid">
+      <article class="price-card"><h3 style="color: white;">Starter</h3><strong style="color: white;">12,990 ₸</strong><p style="color: white;">1 month</p><ul style="color: white;"><li>Catalogue access</li><li>Choose workouts</li><li>Schedule in the app</li></ul><a class="btn btn-blue" href="register.html?plan=starter">Choose</a></article>
+      <article class="price-card featured-price"><span class="badge">Hot</span><h3 style="color: white;">Upgraded</h3><strong style="color: white;">25,990 ₸</strong><p style="color: white;">3 months</p><ul style="color: white;"><li>All activities</li><li>Flexible schedule</li><li>App support</li></ul><a class="btn btn-light-blue" href="register.html?plan=upgraded">Choose</a></article>
+      <article class="price-card"><h3 style="color: white;">Year</h3><strong style="color: white;">75,990 ₸</strong><p style="color: white;">12 months</p><ul style="color: white;"><li>Full-year access</li><li>All activities</li><li>Active lifestyle</li></ul><a class="btn btn-blue" href="register.html?plan=year">Choose</a></article>
+    </div>
+    <p class="center" style="margin-top:30px">Not sure which plan fits? <a href="contact.html" style="color:var(--blue);font-weight:800">Ask us about prices →</a></p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div><strong>Healthy</strong><p>One membership for sport.</p></div>
+  <div><a href="index.html">Home</a><a href="sports.html">Sports</a><a href="locations.html">Locations</a><a href="contact.html">Contact</a><a href="register.html">Register</a></div>
+  <div><p>© 2026 Healthy group project</p></div>
+</footer>
+<script src="js/favourites.js" defer></script>
+</body>
+</html>

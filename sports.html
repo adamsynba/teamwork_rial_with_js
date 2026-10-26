@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore all sports and activities available with a single Healthy membership.">
+  <title>Healthy — Sports & Activities</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/interactive.css">
+  <script src="js/theme.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">Healthy</a>
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="index.html">Studios & Gyms</a>
+    <a class="active" href="sports.html">Sports</a>
+    <a href="services.html">Prices</a>
+    <a href="locations.html">Locations</a>
+    <a href="contact.html">Contact</a>
+    <a href="register.html">Register</a>
+  </nav>
+  <div class="header-actions">
+    <button type="button" class="theme-btn" id="themeToggle">Switch to dark theme</button>
+    <span class="location">● Astana</span>
+    <span>EN⌄</span>
+    <a class="btn btn-dark" href="locations.html">Download</a>
+  </div>
+</header>
+
+<main>
+
+  <!--HERO -->
+  <section class="page-hero">
+    <span class="eyebrow">SPORTS & ACTIVITIES</span>
+    <h1>Everything you need to stay active</h1>
+    <p>One membership, dozens of activities. Discover the sport that fits your mood, your body and your free time.</p>
+  </section>
+
+  <!--CATEGORIES — CSS Grid, 6 cards-->
+  <section class="sport-strip">
+
+    <div class="section-heading centered">
+      <span class="eyebrow">CATEGORIES</span>
+      <h2>Pick your activity</h2>
+      <p>Every category is available at partner studios across the city with one Healthy membership.</p>
+    </div>
+
+    <!-- TASK 3: Live search -->
+    <div class="search-box" id="task3">
+      <label for="sportSearch">Search activities</label>
+      <input type="text" id="sportSearch" placeholder="Type a sport, e.g. yoga">
+      <p id="searchCount" class="search-count" aria-live="polite">Showing 6 of 6 activities</p>
+      <p id="noResults" class="no-results" hidden>No results found</p>
+    </div>
+
+    <div class="sport-grid">
+
+      <article class="sport-card purple">
+        <span>Gym</span>
+        <small>Strength and functional training for every level, with certified coaches on the floor.</small>
+        <strong aria-hidden="true">🏋️</strong>
+      </article>
+
+      <article class="sport-card pink">
+        <span>Yoga</span>
+        <small>Slow, controlled sessions that build flexibility and help you unwind after a long day.</small>
+        <strong aria-hidden="true">🧘</strong>
+      </article>
+
+      <article class="sport-card blue">
+        <span>Swimming</span>
+        <small>Pool time for technique training, endurance sets or a simple, relaxing free swim.</small>
+        <strong aria-hidden="true">🏊</strong>
+      </article>
+
+      <article class="sport-card orange">
+        <span>Boxing</span>
+        <small>High-intensity rounds that mix technique, footwork and cardio in one workout.</small>
+        <strong aria-hidden="true">🥊</strong>
+      </article>
+
+      <article class="sport-card rose">
+        <span>Running</span>
+        <small>Guided track sessions and pace groups for beginners through half-marathon level.</small>
+        <strong aria-hidden="true">🏃</strong>
+      </article>
+
+      <article class="sport-card olive">
+        <span>Dance</span>
+        <small>Group choreography classes, from beginner-friendly routines to advanced styles.</small>
+        <strong aria-hidden="true">💃</strong>
+      </article>
+
+    </div>
+
+    <a href="locations.html" class="btn btn-blue" style="display:block;width:fit-content;margin:40px auto 0;">Book your first session</a>
+
+  </section>
+
+  <!--WEEKLY RHYTHM — page-specific Flexbox component-->
+  <section class="section">
+
+    <div class="section-heading centered">
+      <span class="eyebrow">WEEKLY RHYTHM</span>
+      <h2>Fit sport into every day</h2>
+      <p>Mix activities across the week instead of repeating the same routine.</p>
+    </div>
+
+    <div class="schedule-row" role="list" aria-label="Suggested weekly activity plan">
+      <div class="day-chip" role="listitem"><strong>MON</strong><span aria-hidden="true">🏋️</span><small>Gym</small></div>
+      <div class="day-chip" role="listitem"><strong>TUE</strong><span aria-hidden="true">🧘</span><small>Yoga</small></div>
+      <div class="day-chip" role="listitem"><strong>WED</strong><span aria-hidden="true">🏊</span><small>Swimming</small></div>
+      <div class="day-chip" role="listitem"><strong>THU</strong><span aria-hidden="true">🥊</span><small>Boxing</small></div>
+      <div class="day-chip" role="listitem"><strong>FRI</strong><span aria-hidden="true">🏃</span><small>Running</small></div>
+      <div class="day-chip" role="listitem"><strong>SAT</strong><span aria-hidden="true">💃</span><small>Dance</small></div>
+      <div class="day-chip" role="listitem"><strong>SUN</strong><span aria-hidden="true">🧘</span><small>Rest / Yoga</small></div>
+    </div>
+
+  </section>
+
+  <!--FREE TIME STORY — two-column Grid, image-->
+  <section class="story-section">
+
+    <div class="story-copy">
+      <span class="eyebrow">OUR IDEA</span>
+      <h2>Make your free time interesting</h2>
+      <p>Spend it with us, and reach new heights. Sport does not have to mean one gym and one routine — swap activities depending on your energy and your schedule.</p>
+      <p>Every category above is bookable from the same app, at studios close to your home or workplace.</p>
+    </div>
+
+    <figure class="story-photo">
+      <img src="images/activities.jpg" alt="People doing different sports together outdoors, including running and stretching" width="735" height="490">
+      <figcaption>Members trying a new activity together.</figcaption>
+    </figure>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div>
+    <strong>Healthy</strong>
+    <p>Making sport easier.</p>
+  </div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="services.html">Prices</a>
+    <a href="locations.html">Locations</a>
+  <a href="contact.html">Contact</a><a href="register.html">Register</a>
+  </div>
+  <div>
+    <p>© 2026 Healthy group project</p>
+  </div>
+</footer>
+
+<script src="js/search.js" defer></script>
+</body>
+</html>

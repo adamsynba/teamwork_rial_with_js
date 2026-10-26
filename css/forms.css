@@ -1,0 +1,21 @@
+/* Forms pages (contact.html, register.html) — Bootstrap 5 + Healthy theme */
+/* Bootstrap sets headings to weight 500; the rest of the site uses bold, so match it */
+h1, h2, h3, h4, h5, h6 { font-weight: 700; }
+.form-section { background: var(--light); padding: 70px 0 90px; }
+.form-card { background: #fff; padding: 32px; border: 1px solid var(--border); border-radius: 28px; box-shadow: var(--shadow); }
+.form-label, legend.form-label { font-weight: 700; }
+fieldset { border: 0; padding: 0; margin: 0; }
+legend { float: none; width: auto; padding: 0; margin-bottom: .5rem; }
+.form-control, .form-select { border-radius: 14px; padding: 12px 15px; background-color: #fafbff; }
+.form-control:focus, .form-select:focus { border-color: var(--blue); box-shadow: 0 0 0 .25rem rgba(108,76,255,.2); }
+.form-check-input:checked { background-color: var(--blue); border-color: var(--blue); }
+.btn-outline-dark { border: 1px solid #172338; color: #172338; background: transparent; }
+.btn-outline-dark:hover { background: #172338; color: #fff; }
+.btn-blue:hover { color: #fff; background: var(--blue-dark); }
+.info-list li { margin: 18px 0; font-size: 17px; }
+.info-list span { margin-right: 10px; }
+.text-body-secondary, .form-text { color: var(--muted) !important; }
+@media (max-width: 600px) {
+  .form-section { padding: 40px 0 60px; }
+  .form-card { padding: 22px 18px; border-radius: 22px; }
+}

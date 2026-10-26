@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create a Healthy account — one membership for all kinds of sport.">
+  <title>Healthy — Register</title>
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/interactive.css">
+  <script src="js/theme.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html">Healthy</a>
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="index.html">Studios &amp; Gyms</a>
+    <a href="sports.html">Sports</a>
+    <a href="services.html">Prices</a>
+    <a href="locations.html">Locations</a>
+    <a href="contact.html">Contact</a>
+    <a class="active" aria-current="page" href="register.html">Register</a>
+  </nav>
+  <div class="header-actions">
+    <button type="button" class="theme-btn" id="themeToggle">Switch to dark theme</button>
+    <span class="location">● Astana</span>
+    <span>EN⌄</span>
+    <a class="btn btn-dark" href="register.html">Join</a>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <span class="eyebrow">JOIN HEALTHY</span>
+    <h1>Create your account</h1>
+    <p>One membership for yoga, swimming, gym and dozens of other activities.</p>
+  </section>
+
+  <section class="section form-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-9 col-xl-8">
+          <form id="registerForm" class="form-card" name="register" action="#" method="post" novalidate>
+            <h2 class="h4 fw-bold mb-3">Registration</h2>
+            <p class="form-text mb-3">Fields marked with * are required.</p>
+            <div class="row g-3">
+
+              <div class="col-12 col-md-6">
+                <label for="firstName" class="form-label">First name *</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" minlength="2" maxlength="40" autocomplete="given-name" placeholder="First name" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">First name is required (at least 2 characters).</div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label for="lastName" class="form-label">Last name *</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" minlength="2" maxlength="40" autocomplete="family-name" placeholder="Last name" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Last name is required (at least 2 characters).</div>
+              </div>
+
+              <div class="col-12">
+                <label for="regEmail" class="form-label">Email *</label>
+                <input type="email" class="form-control" id="regEmail" name="email" autocomplete="email" placeholder="name@example.com" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label for="password" class="form-label">Password *</label>
+                <input type="password" class="form-control" id="password" name="password" minlength="8" autocomplete="new-password" aria-describedby="passwordHelp" required>
+                <div id="passwordHelp" class="form-text">At least 8 characters.</div>
+                <div class="valid-feedback">Password accepted.</div>
+                <div class="invalid-feedback">Password must be at least 8 characters.</div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label for="confirmPassword" class="form-label">Confirm password *</label>
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" minlength="8" autocomplete="new-password" required>
+                <div class="valid-feedback">Passwords match.</div>
+                <div class="invalid-feedback" id="confirmInvalid">Please confirm your password (at least 8 characters).</div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <fieldset>
+                  <legend class="form-label fs-6">Gender <span class="text-body-secondary fw-normal">(optional)</span></legend>
+                  <div class="form-check form-check-inline"><input class="form-check-input" type="radio" id="gender-female" name="gender" value="female"><label class="form-check-label" for="gender-female">Female</label></div>
+                  <div class="form-check form-check-inline"><input class="form-check-input" type="radio" id="gender-male" name="gender" value="male"><label class="form-check-label" for="gender-male">Male</label></div>
+                  <div class="form-check form-check-inline"><input class="form-check-input" type="radio" id="gender-none" name="gender" value="none"><label class="form-check-label" for="gender-none">Prefer not to say</label></div>
+                  
+                </fieldset>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label for="country" class="form-label">Country *</label>
+                <select class="form-select" id="country" name="country" required>
+                  <option value="" selected>Choose a country…</option>
+                  <option value="Kazakhstan">Kazakhstan</option><option value="Kyrgyzstan">Kyrgyzstan</option><option value="Uzbekistan">Uzbekistan</option><option value="Russia">Russia</option><option value="Other">Other</option>
+                </select>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please select your country.</div>
+              </div>
+
+              <div class="col-12">
+                <label for="plan" class="form-label">Membership plan *</label>
+                <select class="form-select" id="plan" name="plan" required>
+                  <option value="" selected>Choose a plan…</option>
+                  <option value="starter">Starter — 12,990 ₸ / 1 month</option>
+                  <option value="upgraded">Upgraded — 25,990 ₸ / 3 months</option>
+                  <option value="year">Year — 75,990 ₸ / 12 months</option>
+                </select>
+                <div class="valid-feedback">Plan selected.</div>
+                <div class="invalid-feedback">Please choose a membership plan.</div>
+              </div>
+
+              <div class="col-12">
+                <fieldset>
+                  <legend class="form-label fs-6">Favourite activities <span class="text-body-secondary fw-normal">(optional)</span></legend>
+                  <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" id="hobby-yoga" name="hobbies" value="yoga"><label class="form-check-label" for="hobby-yoga">Yoga</label></div>
+                  <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" id="hobby-swimming" name="hobbies" value="swimming"><label class="form-check-label" for="hobby-swimming">Swimming</label></div>
+                  <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" id="hobby-gym" name="hobbies" value="gym"><label class="form-check-label" for="hobby-gym">Gym</label></div>
+                  <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" id="hobby-boxing" name="hobbies" value="boxing"><label class="form-check-label" for="hobby-boxing">Boxing</label></div>
+                  <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" id="hobby-dance" name="hobbies" value="dance"><label class="form-check-label" for="hobby-dance">Dancing</label></div>
+                  <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" id="hobby-cycling" name="hobbies" value="cycling"><label class="form-check-label" for="hobby-cycling">Cycling</label></div>
+                  
+                </fieldset>
+              </div>
+
+              <div class="col-12 d-flex gap-2 flex-wrap">
+                <button type="submit" class="btn btn-blue">Create account</button>
+                <button type="reset" class="btn btn-outline-dark">Reset</button>
+              </div>
+            </div>
+            <div id="registerSuccess" class="alert alert-success mt-3 d-none" role="status">
+              ✅ Registration successful (demonstration only — no account was created).
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div><strong>Healthy</strong><p>Making sport easier.</p></div>
+  <div><a href="sports.html">Sports</a><a href="services.html">Prices</a><a href="locations.html">Locations</a><a href="contact.html">Contact</a><a href="register.html">Register</a></div>
+  <div><p>© 2026 Healthy group project</p></div>
+</footer>
+<script src="js/register.js"></script>
+</body>
+</html>
